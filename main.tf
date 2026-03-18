@@ -11,9 +11,9 @@ resource "azurerm_storage_account" "static_site" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
-  tag = (
-    evenement = eval
-  )
+  tags = {
+    evenement = "eval"
+  }
 }
 
 
