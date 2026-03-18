@@ -11,10 +11,9 @@ resource "azurerm_storage_account" "static_site" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
-  static_website {
-    index_document     = "index.html"
-    error_404_document = "error.html"
-  }
+  tag = (
+    evenement = eval
+  )
 }
 
 
