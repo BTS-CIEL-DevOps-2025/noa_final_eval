@@ -13,6 +13,7 @@ resource "azurerm_storage_account" "static_site" {
 
   tags = {
     evenement = "eval"
+    change = "new"
   }
 }
 
